@@ -1,0 +1,27 @@
+.display-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.display-text--small {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.display-text--medium {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.display-text--large {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.display-text--extra-large {
+  font-size: 28px;
+  line-height: 42px;
+}
