@@ -1,0 +1,46 @@
+.button {
+  appearance: none;
+  cursor: pointer;
+  white-space: nowrap;
+  line-height: 30px;
+  height: 30px;
+  padding: 0px 20px;
+  vertical-align: middle;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300px;
+  background: #3D83E1;
+  outline: none;
+  border: 1px solid transparent;
+  transition: all 200ms ease;
+}
+
+.button:hover {
+  background: #2669C3;
+}
+
+.button:active {
+  background: #0B4EA7;
+}
+
+.button--danger {
+  background: #FB2651;
+}
+
+.button--danger:hover {
+  background: #EE0E3B;
+}
+
+.button--neutral {
+  background: #fff;
+  border-color: #d9d9d9;
+  color: rgba(0,0,0,.65);
+}
+
+.button--neutral:hover {
+  border-color: #3D83E1;
+  color: #3D83E1;
+  background: #fff;
+}

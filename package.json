@@ -14,6 +14,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "classname": "0.0.0"
+    "classname": "0.0.0",
+    "prop-types": "^15.5.10"
   }
 }
