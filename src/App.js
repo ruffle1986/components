@@ -197,8 +197,7 @@ class App extends Component {
             columns={ [
               {
                 name: 'ID',
-                key: 'id',
-                width: '20px'
+                key: 'id'
               },
               {
                 name: 'Project',

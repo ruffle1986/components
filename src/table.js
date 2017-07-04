@@ -27,10 +27,14 @@ class Table extends Component {
         <tbody>
           {
             this.props.data.map((datum, i) => (
-              <tr>
+              <tr
+                key={ `table-row-${i}` }
+              >
                 {
                   this.props.columns.map((column, j) => (
-                    <td>
+                    <td
+                      key={ `table-cell-${j}` }
+                    >
                       {
                         (() => {
                           if (typeof column.render === 'function') {
