@@ -7,6 +7,7 @@ import './caption.css';
 import './button.css';
 import './button-group.css';
 import './grid.css';
+import './table.css';
 
 import Heading from './heading';
 import DisplayText from './display-text';
@@ -16,6 +17,7 @@ import Button from './button';
 import ButtonGroup from './button-group';
 import Row from './row';
 import Col from './col';
+import Table from './table';
 
 class App extends Component {
   render() {
@@ -189,6 +191,94 @@ class App extends Component {
               </Card>
             </Col>
           </Row>
+        </section>
+        <section className="tables">
+          <Table
+            columns={ [
+              {
+                name: 'ID',
+                key: 'id',
+                width: '20px'
+              },
+              {
+                name: 'Project',
+                key: 'project'
+              },
+              {
+                name: 'Website',
+                key: 'website'
+              },
+              {
+                name: 'Title',
+                key: 'title',
+                render(title, article) {
+                  return (
+                    <a href={ `/articles/${article.id}` }>{ title }</a>
+                  );
+                }
+              },
+              {
+                name: 'Status',
+                key: 'status'
+              },
+              {
+                name: 'Due date',
+                key: 'dueDate'
+              },
+              {
+                name: 'Final due date',
+                key: 'finalDueDate'
+              },
+              {
+                name: 'Assignees',
+                key: 'assignees',
+                render(assignees) {
+                  return assignees &&
+                    assignees.join(', ');
+                }
+              },
+              {
+                name: 'Actions',
+                key: 'id',
+                render(id) {
+                  return (
+                    <div className="actions">
+                      <ButtonGroup>
+                        <Button>
+                          Edit
+                        </Button>
+                        <Button danger>
+                          Delete
+                        </Button>
+                      </ButtonGroup>
+                    </div>
+                  );
+                }
+              }
+            ] }
+            data={ [
+              {
+                id: '1',
+                project: 'Intellyo',
+                website: 'blog.intellyo.com',
+                title: 'Blogging Basics, from Content Flow to Imperfect Grammar',
+                status: 'Published',
+                dueDate: String(new Date()),
+                finalDueDate: String(new Date()),
+                assignees: ['John Doe', 'Kim Basinger', 'Vin Diesel']
+              },
+              {
+                id: '2',
+                project: 'Intellyo',
+                website: 'blog.intellyo.com',
+                title: 'These Facebook competitor analysis tricks will get you ahead of the game in 2017',
+                status: 'Published',
+                dueDate: String(new Date()),
+                finalDueDate: String(new Date()),
+                assignees: ['John Doe', 'Kim Basinger', 'Vin Diesel']
+              }
+            ] }
+          />
         </section>
       </div>
     );

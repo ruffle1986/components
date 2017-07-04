@@ -1,3 +1,7 @@
+.button-group {
+  white-space: nowrap;
+}
+
 .button-group .button {
   margin: 0 5px;
   display: inline-block;
