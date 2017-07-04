@@ -158,6 +158,37 @@ class App extends Component {
               </Card>
             </Col>
           </Row>
+          <Row>
+            <Col span={ 8 }>
+              <Row>
+                <Col span={ 6 }>
+                  <Card
+                    title="Featured images"
+                    footer="Lorem ipsum dolor sit amet."
+                  >
+                    Hello, Featured
+                  </Card>
+                </Col>
+                <Col span={ 6 }>
+                  <Card
+                    title="Featured images"
+                    footer="Lorem ipsum dolor sit amet."
+                  >
+                    Hello, Featured
+                  </Card>
+                </Col>
+              </Row>
+            </Col>
+            <Col span={ 4 }>
+              <Card
+                title="Useful information"
+                titleCaption="You can read some useful information about your project."
+                footer="Lorem ipsum dolor sit amet."
+              >
+                Hello, information
+              </Card>
+            </Col>
+          </Row>
         </section>
       </div>
     );
