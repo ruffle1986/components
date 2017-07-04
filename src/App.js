@@ -6,6 +6,7 @@ import './card.css';
 import './caption.css';
 import './button.css';
 import './button-group.css';
+import './grid.css';
 
 import Heading from './heading';
 import DisplayText from './display-text';
@@ -13,6 +14,8 @@ import Card from './card';
 import Caption from './caption';
 import Button from './button';
 import ButtonGroup from './button-group';
+import Row from './row';
+import Col from './col';
 
 class App extends Component {
   render() {
@@ -97,6 +100,65 @@ class App extends Component {
             Are you sure you want to remove your profile picture?
           </Card>
          </section>
+        <section className="grid">
+          <div className="sub-section">
+            <Row>
+              <Col span={ 8 }>
+                <Card
+                  title="Seo settings"
+                  titleCaption={
+                    <span>
+                      You can set up the page title, description and the user friendly URL.
+                      <br />
+                      These increase the SEO performance of the article.
+                    </span>
+                  }
+                >
+                  Hello, Settings
+                </Card>
+                <Card
+                  title="Featured images"
+                  footer="Lorem ipsum dolor sit amet."
+                >
+                  Hello, Featured
+                </Card>
+              </Col>
+              <Col span={ 4 }>
+                <Card
+                  title="Useful information"
+                  titleCaption="You can read some useful information about your project."
+                  footer="Lorem ipsum dolor sit amet."
+                >
+                  Hello, information
+                </Card>
+                <Card
+                  title="Content Quality Analysis"
+                >
+                  Hello, Analysis
+                </Card>
+              </Col>
+            </Row>
+          </div>
+          <Row gutter={ 30 }>
+            <Col span={ 8 }>
+              <Card
+                title="Featured images"
+                footer="Lorem ipsum dolor sit amet."
+              >
+                Hello, Featured
+              </Card>
+            </Col>
+            <Col span={ 4 }>
+              <Card
+                title="Useful information"
+                titleCaption="You can read some useful information about your project."
+                footer="Lorem ipsum dolor sit amet."
+              >
+                Hello, information
+              </Card>
+            </Col>
+          </Row>
+        </section>
       </div>
     );
   }
