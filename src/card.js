@@ -7,7 +7,7 @@ const Card = (props) => (
     {
       props.title && (
         <div className="card-header">
-          <DisplayText size="large">
+          <DisplayText>
             { props.title }
           </DisplayText>
           {

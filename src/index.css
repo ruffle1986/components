@@ -20,8 +20,19 @@ section {
   margin: 20px;
 }
 
-section .card {
-  margin-bottom: 20px;
+.grid .row {
 }
 
+.cards .card {
+}
 
+.sub-section {
+  background: #E9E9E9;
+  padding: 20px 20px 0;
+  margin-bottom: 20px;
+  box-shadow: 0 0 0 1px rgba(63,63,68,.05), 0 1px 3px 0 rgba(63,63,68,.15);
+}
+
+.sub-section .card {
+  margin-bottom: 20px;
+}
